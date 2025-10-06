@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+:root {
+    --base-color: #d2c3c6;
+    --text-color: white;
+    --primary-color: rgb(2, 2, 15);
+    --secondary-color: rgb(2, 2, 15);
+    --color-1: #510c19;
+    --color-2: #510c19;
+    --color-3: #510c19;
+}
+
+*{
+    margin: 50;
+    padding: 50;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+body{
+    padding: 50;
+    background-color: var(--base-color);
+}
+
+h1 h2 h3 {
+    font-family: merriwether, Popppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ;
+}
+
+nav {
+    margin: 2em auto 2em auto;
+    width: min (1000px, 100%);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none ;
+    gap: 2em;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-family: Merriweather, Poppins;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header, section {
+    margin: 2em auto;
+    width: min (50em, 100%);
+    background-color: var(--color-1);
+    padding: min (2em,15%);
+    border-radius: 2em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content:center;
+    align-items: right ;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 2em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.text-container {
+    flex: 0 1 2em;
+}
+
+h1 {
+    font-size: 100;
+}
+
+.text-container p {
+    margin: 2em 0 2em 0;
+    font-size: 100;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 2em 2em;
+    border-radius: 2em;
+    font-weight: 600;
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+section {
+    padding: 2em min(2em, 15%);
+    background-color: var(--color-2);
+    text-align: center;
+}
+
+h2 {
+    font-size: 50;
+}
+
+section p {
+    margin: 1em;
+    font-size: 50;
+}
+
+section#my-work {
+    background-color: var(--color-3);
+}
+
+.grid-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-4 img-5";
+    gap: 1em;
+}
+
+.grid-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+
+.grid-container img:hover {
+    scale: 1.05;
+}
+
+details{
+    margin-top: 1em;
+    background-color: var(--base-color);
+    border-radius: 1em;
+    color: black;
+}
+
+details summary {
+    padding: 1em;
+    font-size: 20;
+    font-family: Merriweather, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-seri;
+    color: black;
+}
+
+details p {
+    padding: 0 2em 2em;
+    color: black;
+}
